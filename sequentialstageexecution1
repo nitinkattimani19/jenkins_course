@@ -1,7 +1,5 @@
-pipleline{
-  agent {
-    label 'any'
-  }
+pipeline{
+  agent any
   stages{
     stage('stage1'){
       steps{
