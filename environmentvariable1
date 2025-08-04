@@ -1,0 +1,18 @@
+pipeline{
+  agent any
+  environment{
+    fname = "Nitin"
+  }
+  stages{
+    stage('one'){
+      steps{
+        echo 'Hello ${fname}'
+      }
+    }
+    stage('two'){
+      steps{
+        echo 'Hello ${fname}'
+      }
+    }
+  }
+}
